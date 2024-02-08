@@ -44,6 +44,6 @@ RUN pip install pip==9.0.3
 RUN pip install pybind11
 RUN pip install cppy
 RUN git clone https://github.com/neurosynth/neurosynth.git
-RUN cd neurosynth & python setup.py install
+RUN cd neurosynth & pip install .
 RUN cd ../
 RUN pip install -r requirements.txt
