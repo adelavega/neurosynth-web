@@ -12,7 +12,6 @@ services:
       - /media/data-drive/neurosynth:/data:rw
       - /logs/synth:/logs:rw
     working_dir: /code
-    command: /code/scripts/docker_startup.sh
     depends_on:
       - db
       - broker
